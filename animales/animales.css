@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tituloPrincipal{
+   
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.navegacion{
+    color: bisque;
+    text-decoration: none;
+}
+
+.titulofooter{
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px; }
+
+ footer{
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    bottom: 0%;
+    background-image: url(../imagenes/imgPiePagina.jpeg);
+    background-position: center;    
+    background-size: cover;
+    position: absolute;
+    }

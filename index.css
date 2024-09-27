@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Inicio del header */
+header{
+    display: grid;
+    height: 200px;
+    grid-template-rows: 200px    ;
+    grid-template-areas: "a1";
+   
+}
+
+#banner{
+    grid-area:a1 ;
+    grid-template-rows:  100%;
+    grid-area: "a2";
+    background-image: url(imagenes/Imagen.png);
+    background-position: center;    
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+
+.tituloPrincipal{
+   
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 100px;     
+
+}
+/* Fin del header */
+
+/* Inicio de Nav */
+#tituloNav{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#tNav{
+    font-size: 25px;
+    
+}
+/* Fin del nav */
+
+/* Inicio del main */
+#grilla{
+    display: grid;
+    height: 2200px;
+    background-image:url(imagenes/fondo.jpg) ;
+    background-position: center;    
+    background-size: cover;
+    grid-template-rows: 500px 500px 500px 500px;
+   
+    grid-template-columns: 49% 49% ;
+
+    grid-template-areas:  
+                        "a2 a3 "
+                        "a2 a3" 
+                        "a4 a5"
+                        "a4 a5";
+
+    justify-items: center;
+    align-items: center;   
+    justify-content: center;
+    align-content: center;
+}
+#elem1{
+    display: grid;
+    grid-area:a3;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:23% 67%;
+    grid-template-areas:"t1"
+                        "t2";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;            
+ }
+ #elem2{
+   display: grid;
+    grid-area: a4;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:23% 67%;
+    grid-template-areas:"tx1"
+                        "tx2";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;  
+
+}
+
+#elemIMG3{
+    
+    grid-area: a2;
+    width: 90%;
+    height: 90%;
+
+}
+#elemIMG4{
+    grid-area: a5;
+    width: 90%;
+    height: 90%;
+}
+
+p{
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(91, 86, 86);
+    background-color: rgba(0, 0, 0, 0.091);
+}
+#tx1{
+    grid-area: t1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: black;
+    width: 95%;
+    height: 95%;
+}
+#tx2{
+    grid-area: t2;
+    width: 95%;
+    height: 95%;
+}
+#text1{
+    grid-area: tx1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: black;
+    width: 95%;
+    height: 95%;
+}
+#text2{
+    grid-area: tx2;
+    width: 95%;
+    height: 95%;
+}
+/* Fin del main */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Inicio del footer */
+footer{
+    
+        display: grid;
+        height: 100px;
+        grid-template-rows: 100px    ;
+        grid-template-areas: "a1";
+       position: sticky;
+    
+}
+
+#bannerFooter{
+    grid-area:a1 ;
+    grid-template-rows:  100%;
+    grid-area: "a2";
+    background-image: url(imagenes/imgPiePagina.jpeg);
+    background-position: center;    
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+.titulofooter{
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;     
+}
+/* Fin del footer */
