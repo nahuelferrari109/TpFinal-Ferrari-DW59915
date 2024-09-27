@@ -1,12 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Inicio del header */
+header{
+    display: grid;
+    height: 200px;
+    grid-template-rows: 200px    ;
+    grid-template-areas: "a1";
+   
+}
+
+#banner{
+    grid-area:a1 ;
+    grid-template-rows:  100%;
+    grid-area: "a2";
+    background-image: url(../imagenes/Imagen.png);
+    background-position: center;    
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+
 .tituloPrincipal{
-    
+   
     font-family: "Parisienne", cursive;
     font-weight: bold;
-    font-size: 100px;
-  
-  
+    text-align: center;
+    font-size: 100px;     
+
 }
-.navegacion{
-    color: bisque;
-    text-decoration: none;
+/* Fin del header */
+
+/* Inicio de Nav */
+#tituloNav{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#tNav{
+    font-size: 25px;
+    
+}
+/* Fin del nav */
+@media only screen and ( min-width: 850px ){
+/* Inicio del main */
+#grilla{
+    display: grid;
+    height: 2500px;
+    background-image:url(../imagenes/fondo.jpg) ;
+    background-position: center;    
+    background-size: cover;
+    grid-template-rows: 200px 500px 500px 500px 500px;
+   
+    grid-template-columns: 49% 49% ;
+
+    grid-template-areas:  
+                        "a1 a1"
+                        "a2 a3 "
+                        "a2 a3" 
+                        "a4 a5"
+                        "a4 a5";
+
+    justify-items: center;
+    align-items: center;   
+    justify-content: center;
+    align-content: space-evenly;
+}
+#titulopag{
+    display: grid;
+    grid-area:a1;
+    grid-template-areas:"elem";
+    width: 90%;
+    height: 90%;
+    justify-items: center;
+    align-items: center;   
+    justify-content: center;
+    align-content: center;
+
+}
+.titulopag1{
+    font-family: "Parisienne", cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    grid-area: elem;
+}
+#elem1{
+    display: grid;
+    grid-area:a2;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:50% 45%;
+    grid-template-areas:"elem1"
+                        "elem1b";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;            
+ }
+ #elem2{
+   display: grid;
+    grid-area: a3;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:50% 45%;
+    grid-template-areas:"elem2"
+                        "elem2b";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;  
+
+}
+#elem3{
+    display: grid;
+     grid-area: a4;
+     width: 90%;
+     height: 90%;
+     grid-template-rows:50% 45%;
+     grid-template-areas:"elem3"
+                         "elem3b";
+ 
+     justify-items: center;
+     align-content: center;
+     justify-content: space-evenly;
+     align-content: space-evenly;  
+ 
+ }
+ #elem4{
+    display: grid;
+     grid-area: a5;
+     width: 90%;
+     height: 90%;
+     grid-template-rows:50% 45%;
+     grid-template-areas:"elem4"
+                        "elem5";                         
+ 
+     justify-items: center;
+     align-content: center;
+     justify-content: space-evenly;
+     align-content: space-evenly;  
+ }
+p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.151);
+    width: 100%;
+    height: 100%;
+}
+}
+@media only screen and ( max-width: 850px ){
+
+    #grilla{
+        display: grid;
+        height: 2300px;
+        background-image:url(../imagenes/fondo.jpg) ;
+        background-position: center;    
+        background-size: cover;
+        grid-template-rows: 200px 500px 500px 500px 500px ;
+       
+        grid-template-columns: 95% ;
+    
+        grid-template-areas:  
+                            "a1 "
+                            "a2 "
+                            "a3 " 
+                            "a4"
+                            "a5";
+    
+        justify-items: center;
+        align-items: center;   
+        justify-content: center;
+        align-content: center;
+    }
+    #titulopag{
+        display: grid;
+        grid-area:a1;
+        grid-template-areas:"elem";
+        width: 90%;
+        height: 90%;
+        justify-items: center;
+        align-items: center;   
+        justify-content: center;
+        align-content: center;
+    
+    }
+    .titulopag1{
+        font-family: "Parisienne", cursive;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        grid-area: elem;
+    }
+    #elem1{
+        display: grid;
+        grid-area:a2;
+        width: 90%;
+        height: 90%;
+        grid-template-rows:50% 45%;
+        grid-template-areas:"elem1"
+                            "elem1b";
+    
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;            
+     }
+     #elem2{
+       display: grid;
+        grid-area: a3;
+        width: 90%;
+        height: 90%;
+        grid-template-rows:50% 45%;
+        grid-template-areas:"elem2"
+                            "elem2b";
+    
+        justify-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;  
+    
+    }
+    #elem3{
+        display: grid;
+         grid-area: a4;
+         width: 90%;
+         height: 90%;
+         grid-template-rows:50% 45%;
+         grid-template-areas:"elem3"
+                             "elem3b";
+     
+         justify-items: center;
+         align-content: center;
+         justify-content: space-evenly;
+         align-content: space-evenly;  
+     
+     }
+     #elem4{
+        display: grid;
+         grid-area: a5;
+         width: 90%;
+         height: 90%;
+         grid-template-rows:50% 45%;
+         grid-template-areas:"elem4"
+                            "elem5";                         
+     
+         justify-items: center;
+         align-content: center;
+         justify-content: space-evenly;
+         align-content: space-evenly;  
+     }
+    p{
+        font-size: 26px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.151);
+        width: 100%;
+        height: 100%;
+    }
+
+}    
+    /* Fin del main */
+
+/* Inicio del footer */
+ footer{
+    
+    display: grid;
+    height: 100px;
+    grid-template-rows: 100px    ;
+    grid-template-areas: "a1";
+   position: sticky;
+
+}
+
+#bannerFooter{
+grid-area:a1 ;
+grid-template-rows:  100%;
+grid-area: "a2";
+background-image: url(../imagenes/imgPiePagina.jpeg);
+background-position: center;    
+background-size: cover;
+justify-content: center;
+align-content: center;
+}
+.titulofooter{
+font-family: "Parisienne", cursive;
+font-weight: bold;
+text-align: center;
+font-size: 50px;     
+}
+/* Fin del footer */
+img{
+    max-width: 100%;
+    max-height: 100%;
 }

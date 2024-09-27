@@ -43,7 +43,7 @@ header{
     
 }
 /* Fin del nav */
-
+@media only screen and ( min-width: 850px ){
 /* Inicio del main */
 #grilla{
     display: grid;
@@ -112,8 +112,10 @@ header{
 p{
     font-size: 27px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(91, 86, 86);
-    background-color: rgba(0, 0, 0, 0.091);
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.143);
+    width: 100%;
+    height: 100%;
 }
 #tx1{
     grid-area: t1;
@@ -143,11 +145,130 @@ p{
     width: 95%;
     height: 95%;
 }
-/* Fin del main */
-img{
-    max-width: 100%;
-    max-height: 100%;
 }
+@media only screen and ( max-width: 850px ){
+#grilla{
+    display: grid;
+    height: 3100px;
+    background-image:url(imagenes/fondo.jpg) ;
+    background-position: center;    
+    background-size: cover;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+   
+    grid-template-columns: 99% ;
+
+    grid-template-areas:  
+                        "a1"
+                        "a1"
+                        "a2 "
+                        "a3" 
+                        "a3"
+                        "a4";
+
+    justify-items: center;
+    align-items: center;   
+    justify-content: center;
+    align-content: space-evenly;
+}
+#elem1{
+    display: grid;
+    grid-area:a1;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:23% 67%;
+    grid-template-areas:"t1"
+                        "t2";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;            
+ }
+ #elem2{
+   display: grid;
+    grid-area: a3;
+    width: 90%;
+    height: 90%;
+    grid-template-rows:23% 67%;
+    grid-template-areas:"tx1"
+                        "tx2";
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;  
+
+}
+
+#elemIMG3{
+    
+    grid-area: a2;
+    width: 90%;
+    height: 90%;
+
+}
+#elemIMG4{
+    display: grid;
+    grid-area: a4;
+    width: 90%;
+    height: 90%;
+    grid-template-rows: 90%;
+    grid-template-areas:"img1";
+                        
+
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;  
+}
+#img1{
+    grid-area: img1;
+    width: 95%;
+    height: 95%;
+}
+p{
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.143);
+    width: 100%;
+    height: 100%;
+}
+#tx1{
+    grid-area: t1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: black;
+    width: 95%;
+    height: 95%;
+}
+#tx2{
+    grid-area: t2;
+    width: 95%;
+    height: 95%;
+}
+#text1{
+    grid-area: tx1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: black;
+    width: 95%;
+    height: 95%;
+}
+#text2{
+    grid-area: tx2;
+    width: 95%;
+    height: 95%;
+}
+
+}
+/* Fin del main */
+
+
+
+
 /* Inicio del footer */
 footer{
     
@@ -176,3 +297,7 @@ footer{
     font-size: 50px;     
 }
 /* Fin del footer */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
