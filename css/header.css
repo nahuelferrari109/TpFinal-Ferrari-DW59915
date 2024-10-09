@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Inicio del header */
+header{
+    display: grid;
+    height: 256px;
+    grid-template-rows: 200px 56px ;
+    grid-template-areas:"a1" 
+                        "nav1";
+                    }
+#banner{
+    grid-area:a1 ;
+    grid-template-rows:  100%;
+    grid-area: "a1";
+    background-image: url(../img/Imagen.png);
+    background-position: center;    
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Fin del header */
+
+/* Inicio de Nav */
+nav{
+    grid-area: nav1 !important;
+    
+}
+/* Fin del nav */
